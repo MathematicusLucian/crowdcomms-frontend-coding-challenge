@@ -18,13 +18,13 @@ The first screen has a list of 10 ingredients which you can pick from.
 
 Once you have selected your ingredient it should navigate to another page containing a list of recipes. Each recipe will contain the title of the recipe, ingredients required and a link to the recipe page.
 
-When navigating from the ingredients page to the recipe list page the data should be called from the cache and not the fetch it from the api each time if the same ingredient is chosen.
+When navigating from the ingredients page to the recipe list page the data should be called from the cache and not fetch it from the api each time if the same ingredient is chosen.
 
 Every 10 seconds the underlying data of the cache must be updated to display a new list of recipes in the recipe list. 
 
 However, the recipe list must not automatically update as the chef may be reading one of the recipe ideas. Instead it should notify the chef that there are more recipes available and allow him to choose to update the list. 
 
-Also, instead of making the chef wait 10 seconds for the recipe to update as he is rather impatient, there should be the option to force a manual update to fetch new recipes.
+Also, instead of making the chef wait 10 seconds for the recipe to update (as he is rather impatient), there should be the option to force a manual update to fetch new recipes.
 
 ## Requirements
 
@@ -36,6 +36,9 @@ The app must be:
 5. Structured as though it is expected to grow into a large enterprise app in the future
 6. Display a good overall knowledge of the main Angular concepts 
 
+Commit regularly and follow the [Angular guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-guidelines) for commit messages.
+
+Example commit message: "fix(recipe list): cache not updating"
 
 ## Time Limit
 
