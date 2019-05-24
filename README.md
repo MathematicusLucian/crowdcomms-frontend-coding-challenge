@@ -8,7 +8,7 @@ You have been tasked with creating a simple yet powerful recipe app using __Angu
 
 The chef is rather frugal and does not want the app to fetch data unnecessarily from the server so it must be cached appropriately.  The budget is so small for this project that we have to complete it within 2.5 hours.
 
-Please fork this repository and once finished (or when the time limit has expired) send a pull request.  
+Fork this repository and once finished (or when the time limit has expired) send a link to the newly forked repository.  Please do not send a pull request.  
 
 ## Instructions
 
