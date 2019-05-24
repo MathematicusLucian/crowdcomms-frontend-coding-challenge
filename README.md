@@ -12,11 +12,11 @@ Please fork this repository and once finished (or when the time limit has expire
 
 ## Instructions
 
-The app will fetch a list of recipes from a server and will allow the chef to star their favorite recipes (the data does not need to persist).  It will consist of just two screen.
+The app will fetch a list of recipes from a server and will allow the chef to star their favorite recipes (the data does not need to persist).  It will consist of just two screens.
 
-The first screen has a list of 10 ingredients which you can pick from.
+The first screen will have a list of 10 ingredients from which the chef can pick from.
 
-Once you have selected your ingredient it should navigate to another page containing a list of recipes. Each recipe will contain the title of the recipe, ingredients required and a link to the recipe page.
+Once the chef has selected his ingredients it should navigate to another page containing a list of recipes. Each recipe will contain the title of the recipe, other ingredients required and a link to the recipe page.
 
 When navigating from the ingredients page to the recipe list page the data should be called from the cache and not fetch it from the api each time if the same ingredient is chosen.
 
@@ -34,7 +34,7 @@ The app must be:
 3. Tested
 4. Optimised for performance
 5. Structured as though it is expected to grow into a large enterprise app in the future
-6. Display a good overall knowledge of the main Angular concepts 
+6. Display a good overall knowledge of the main Angular concepts and best practices
 
 Commit regularly and follow the [Angular guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-guidelines) for commit messages.
 
