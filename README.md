@@ -16,7 +16,7 @@ The app will fetch a list of recipes from a server and will allow the chef to st
 
 The first screen will have a list of 10 ingredients from which the chef can pick from.
 
-Once the chef has selected his ingredients it should navigate to another page containing a list of recipes. Each recipe will contain the title of the recipe, other ingredients required and a link to the recipe page.
+Once the chef has selected his ingredient it should navigate to another page containing a list of recipes. Each recipe will contain the title of the recipe, other ingredients required and a link to the recipe page.
 
 When navigating from the ingredients page to the recipe list page the data should be called from the cache and not fetch it from the api each time if the same ingredient is chosen.
 
@@ -39,6 +39,8 @@ The app must be:
 Commit regularly and follow the [Angular guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-guidelines) for commit messages.
 
 Example commit message: "fix(recipe list): cache not updating"
+
+Good luck!
 
 ## Time Limit
 
