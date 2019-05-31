@@ -46,3 +46,5 @@ Good luck!
 
 2.5 hours
 
+**Please note: If you get cors issues on the api then it does accept jsonp requests.  If that is a problem then please use any other suitable api to fulfill the requirements of the challenge.
+
