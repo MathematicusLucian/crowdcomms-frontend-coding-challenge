@@ -1,1 +1,16 @@
-<p>ingredients works!</p>
+<h1>Choose Ingredients:</h1>  
+
+<div class="form-group" *ngIf="ingredients"> 
+  <div *ngFor="let ingredient of ingredients"> 
+      <label>
+        <input type="checkbox" 
+          name="ingredients"
+          value="{{ ingredient.name }}" />
+        {{ ingredient.name }}
+      </label>
+  </div>
+</div> 
+
+<button class="cta" 
+  (click)="chooseRecipe()"
+  *ngIf="ingredients">Choose a Recipe</button> 
