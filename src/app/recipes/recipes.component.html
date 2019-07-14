@@ -1,1 +1,13 @@
-<p>recipes works!</p>
+<a routerLink="/">Change Ingredients Selection</a>
+
+<h1>Choose Recipe:</h1> 
+
+<ul *ngIf="recipes_returned">
+  <li *ngFor="let rr of recipes_returned.results"> 
+    <h3>{{ rr.title }}</h3> 
+    <p>{{ rr.ingredients }}</p>
+    <p>
+      <a class="cta" href="{{ rr.href }}">Choose this recipe</a>
+    </p> 
+  </li>
+</ul>
