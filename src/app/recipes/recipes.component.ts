@@ -8,9 +8,17 @@ import { DataService } from '../../services/data.service';
 })
 export class RecipesComponent implements OnInit {
 
-  constructor() { }
+  recipes_returned: Object;
+
+  constructor(private data: DataService) {}
 
   ngOnInit() {
-  }
+    console.log(this.data.puppy_params);
+    this.data.getPuppyData().subscribe(data => {
+        this.recipes_returned = data
+        console.log(this.recipes_returned);
+      }
+    );
+  } 
 
 }
