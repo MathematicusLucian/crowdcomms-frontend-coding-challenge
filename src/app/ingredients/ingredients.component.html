@@ -1,11 +1,16 @@
-<h1>Choose Ingredients:</h1>  
+<h1>Choose Ingredients:</h1> 
+
+<input [(ngModel)]="searchText" 
+        id ="ingredientsCheckbox"
+        placeholder="search for ingredient"> 
 
 <div class="form-group" *ngIf="ingredients"> 
-  <div *ngFor="let ingredient of ingredients"> 
+  <div *ngFor="let ingredient of ingredients | filter : searchText"> 
       <label>
         <input type="checkbox" 
           name="ingredients"
-          value="{{ ingredient.name }}" />
+          value="{{ ingredient.name }}"
+          [(ngModel)]="ingredient.checked"/>
         {{ ingredient.name }}
       </label>
   </div>

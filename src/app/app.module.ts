@@ -6,12 +6,14 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { RecipesComponent } from './recipes/recipes.component';  
+import { FilterPipe } from './filter.pipe'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     IngredientsComponent,
-    RecipesComponent
+    RecipesComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

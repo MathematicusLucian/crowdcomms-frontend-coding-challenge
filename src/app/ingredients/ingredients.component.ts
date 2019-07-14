@@ -81,10 +81,14 @@ export class IngredientsComponent implements OnInit {
 
   chooseRecipe() {
 
-    let chosenIngredients = ["potato"];
-    console.log(chosenIngredients);  
-    this.data.setPuppyDataParams(chosenIngredients);
-    this.router.navigate(['/recipes']); 
+    let chosenIngredients = this.ingredients.filter((ingredient) => { return ingredient.checked })
+                     .map((ingredient) => { return ingredient.name });
+    //console.log(chosenIngredients); 
+
+    if(chosenIngredients.length>0){
+      this.data.setPuppyDataParams(chosenIngredients);
+      this.router.navigate(['/recipes']);
+    }
   
   }
 
