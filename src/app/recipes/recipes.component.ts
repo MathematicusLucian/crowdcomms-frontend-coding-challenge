@@ -16,7 +16,7 @@ export class RecipesComponent implements OnInit {
     console.log(this.data.puppy_params);
     this.data.getPuppyData().subscribe(data => {
         this.recipes_returned = data
-        console.log(this.recipes_returned);
+        console.log(this.recipes_returned["results"]);
       }
     );
   }
