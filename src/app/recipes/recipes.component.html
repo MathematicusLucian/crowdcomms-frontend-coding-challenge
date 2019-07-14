@@ -4,7 +4,9 @@
 
 <ul *ngIf="recipes_returned">
   <li *ngFor="let rr of recipes_returned.results"> 
-    <h3>{{ rr.title }}</h3> 
+    <h3>{{ rr.title }}</h3>
+    <span (click)="clickedStar(rr.title)" 
+      [ngClass]='ifStar(rr.title)'>&#9733;</span>  
     <p>{{ rr.ingredients }}</p>
     <p>
       <a class="cta" href="{{ rr.href }}">Choose this recipe</a>
