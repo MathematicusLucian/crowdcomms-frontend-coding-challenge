@@ -1,5 +1,14 @@
 # Frontend Coding Challenge
 
+## Comments
+
+1. Presentable - Added some CSS
+2. Cached to prevent unnecessary api calls - Was seeking to implement RxJS / use memory as store of last fetched data
+3. Must be tested - Basic; some tests failing
+4. Optimised for performance - Has Data service; Was seeking to implement RxJS 
+5. Structured as though it is expected to grow into a large enterprise app in the future - Believe apprpriate file structure
+6. Display a good overall knowledge of the main Angular concepts and best practices - Believe meets this
+
 ## Introduction
 
 You have been tasked with creating a simple yet powerful recipe app using __Angular__ for a local chef.  The app will be created using the following free and open api:
