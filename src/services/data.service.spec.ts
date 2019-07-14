@@ -1,6 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { DataService } from './data.service';
-import { HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+TestBed.configureTestingModule({
+  imports: [ HttpClient, 
+             FormsModule, 
+             Observable, 
+             map ]
+});
 
 let httpClientSpy: { get: jasmine.Spy };
 let dataService: DataService;
